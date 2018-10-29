@@ -1,0 +1,26 @@
+<div class="container home-container">
+    <div class="row">
+      <ng-container *ngFor="let data of data">
+        <div class="col-4">
+
+            <img src='{{data.url}}' class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-8">
+            <div class="card">
+                <div class="card-header">
+                    Datos Personales
+                </div>
+                <div class="card-body" >
+
+
+                    <h5 class="card-title">{{data.id}}</h5>
+                    <p class="card-text">{{data.title}}</p>
+
+                    <a href="listStudents" class="btn btn-primary">Regresar</a>
+
+                </div>
+            </div>
+        </div>
+        </ng-container>
+    </div>
+</div>
